@@ -1,0 +1,33 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  # this build can be done in a separate pipeline via publish and download artifacts
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build
+        run: echo "Building..."
+
+
+  deploy-dev:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - name: Deploy to Dev
+        run: echo "Deploying to Dev..."
+
+  deploy-prod:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Deploy to Production
+        run: echo "Deploying to Production..."
+
