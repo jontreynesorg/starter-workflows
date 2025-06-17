@@ -1,5 +1,5 @@
 ## Contributing
-stage2changes p2
+stage2changes p2 p3
 
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
