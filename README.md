@@ -8,7 +8,11 @@ hotfixtest
 
 stage4 no fast forward p1 p2, second pr p1 p2
 
+mynewfeature
+
 These are the workflow files for helping people get started with GitHub Actions.  They're presented whenever you start to create a new GitHub Actions workflow.
+
+myhotfixfromfastforward
 
 **If you want to get started with GitHub Actions, you can use these starter workflows by clicking the "Actions" tab in the repository where you want to create a workflow.**
 
